@@ -7,7 +7,7 @@ drop table if exists userinfo;
 
 create table if not exists userinfo (
     id  varchar(20) primary key,
-    pw  varchar(20) not null,
+    pw  varchar(64) not null,
     name varchar(20) not null,
     address varchar(100) not null
 );
